@@ -1,0 +1,6 @@
+<!-- source/blog/index.html.erb -->
+<ul class="list-unstyled">
+  <% blog.articles.each do |article| %>
+    <li><a href="<%= article.url %>"><%= article.title %></a> <span><%= article.date.strftime('%b %e %Y') %></span></li>
+  <% end %>
+</ul>
